@@ -1,12 +1,13 @@
 ---
 name: 'build images'
 
-on: [push]
+#on: [push]
 
-#on:
-#  push:
-#    branches:
-#      - master
+on:
+  push:
+    branches:
+      - master
+      
 env:
   SSH_ACTIONS: false
   
