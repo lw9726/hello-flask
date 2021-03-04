@@ -19,9 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: SSH Connection To Actions
-        uses: P3TERX/debugger-action@master
-        if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
+      #- name: SSH Connection To Actions
+      #  uses: P3TERX/debugger-action@master
+      #  if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
       - name: Prepare
         id: prep
